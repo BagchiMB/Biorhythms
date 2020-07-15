@@ -15,7 +15,7 @@ const Chart = ({birthDate, targetDate}) => {
         .map((item)=>({...item, date: formatDate(item.date)}))
     // console.log(data)
     return (
-        <div style={{marginLeft:'-15vw'}}>
+        <div className="Chart">
         <ResponsiveContainer width="100%" height={200}>
             <LineChart data={data}>
                 <XAxis dataKey='date'

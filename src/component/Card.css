@@ -10,3 +10,31 @@
 {
     color:blue;
 }
+.Chart
+{
+    margin-left: -3vw;
+}
+.App
+{
+    height:100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App .App-container
+{
+    height:100%;
+    width:60%;
+}
+@media (max-width: 600px)
+{
+    .App .App-container
+    {
+        width:100%;
+    }
+    .Chart
+    {
+        margin-left: -20vw;
+    }
+}

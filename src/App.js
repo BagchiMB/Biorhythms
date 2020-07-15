@@ -28,18 +28,22 @@ function App() {
           <IonTitle>Biorhythms App</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding">
-        <IonItem>
-          <IonLabel position="fixed">Target Date:</IonLabel>
-          <IonDatetime displayFormat="DD MMM YYYY" value={targetDate} onIonChange={(e)=>setTargetDate(e.detail.value)}/>
-        </IonItem>
-        {DOB && <Card birthDate={DOB} date={targetDate}/>}
-        <IonItem>
-          <IonLabel position="fixed">DOB:</IonLabel>
-          <IonDatetime displayFormat="DD MMM YYYY" value={DOB} onIonChange={(e)=>setDOB(e.detail.value)}/>
-        </IonItem>
-        
-      </IonContent>
+      <div className="App">
+        <div className="App-container">
+          <IonContent className="ion-padding">
+            <IonItem>
+              <IonLabel position="fixed">DOB:</IonLabel>
+              <IonDatetime displayFormat="DD MMM YYYY" value={DOB} onIonChange={(e)=>setDOB(e.detail.value)}/>
+            </IonItem>
+            <IonItem>
+              <IonLabel position="fixed">Target Date:</IonLabel>
+              <IonDatetime displayFormat="DD MMM YYYY" value={targetDate} onIonChange={(e)=>setTargetDate(e.detail.value)}/>
+            </IonItem>
+            {DOB && <Card birthDate={DOB} targetDate={targetDate}/>}
+            
+          </IonContent>
+        </div>
+      </div>
     </IonApp>
   );
 }
