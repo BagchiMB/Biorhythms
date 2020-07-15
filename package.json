@@ -1,0 +1,36 @@
+{
+  "name": "biorhythm-calculator",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "dependencies": {
+    "@ionic/react": "^5.0.5",
+    "dayjs": "^1.8.29",
+    "ionicons": "^5.0.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "recharts": "^1.8.5"
+  },
+  "devDependencies": {
+    "react-scripts": "3.4.1"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
